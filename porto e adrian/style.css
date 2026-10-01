@@ -1,0 +1,159 @@
+/* ==========================================
+   PALET WARNA COKLAT (EARTHY COFFEE THEME)
+   ========================================== */
+:root {
+  --primary-brown: #6f4e37; /* Coklat Kopi (Tombol, Accent) */
+  --dark-brown: #4a2c2a; /* Coklat Tua (Jumbotron, Navbar, Footer) */
+  --light-brown: #e8d8c8; /* Coklat Muda / Latte */
+  --bg-cream: #f4efe9; /* Warna Krem Lembut (Projects Section) */
+  --text-dark: #2b1b17; /* Warna Teks Coklat Gelap */
+}
+
+/* Base Style */
+body {
+  color: var(--text-dark);
+  padding-top: 3.5rem; /* Menyesuaikan jarak tinggi navbar fixed */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+}
+
+/* ==========================================
+   NAVBAR
+   ========================================== */
+.bg-brown {
+  background-color: var(--dark-brown) !important;
+}
+
+.navbar-brand {
+  letter-spacing: 0.5px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--light-brown);
+}
+
+/* ==========================================
+   JUMBOTRON / HERO SECTION
+   ========================================== */
+.jumbotron {
+  padding-top: 5rem;
+  background-color: var(--dark-brown); /* Latar Belakang Coklat Tua */
+  color: #ffffff; /* Teks Putih agar Kontras */
+  position: relative;
+}
+
+.jumbotron img.img-thumbnail {
+  border: 4px solid #ffffff;
+  padding: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.jumbotron h1 {
+  letter-spacing: 1px;
+}
+
+.jumbotron p.lead {
+  color: var(--light-brown);
+}
+
+/* kerapatan SVG Gelombang di bawah Jumbotron */
+.jumbotron svg,
+section svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: -1px; /* Mencegah celah garis putih di bawah SVG */
+}
+
+/* ==========================================
+   ABOUT SECTION
+   ========================================== */
+#about {
+  padding-top: 3rem;
+  background-color: #ffffff;
+}
+
+/* ==========================================
+   PROJECTS SECTION
+   ========================================== */
+#projects {
+  padding-top: 3rem;
+  background-color: var(--bg-cream); /* Latar belakang Krem */
+}
+
+#projects .card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+#projects .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(74, 44, 42, 0.15) !important;
+}
+
+/* ==========================================
+   CONTACT SECTION
+   ========================================== */
+#contact {
+  padding-top: 3rem;
+  background-color: #ffffff;
+}
+
+/* Form Controls Customization */
+.form-control {
+  border: 1px solid #d3c4b5;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+
+.form-control:focus {
+  border-color: var(--primary-brown);
+  box-shadow: 0 0 0 0.25rem rgba(111, 78, 55, 0.25);
+}
+
+.btn-brown {
+  background-color: var(--primary-brown);
+  border-color: var(--primary-brown);
+  border-radius: 8px;
+  padding: 0.6rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-brown:hover {
+  background-color: var(--dark-brown);
+  border-color: var(--dark-brown);
+  color: #ffffff;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+.bg-brown-dark {
+  background-color: var(--dark-brown) !important;
+}
+
+footer p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+footer a {
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
